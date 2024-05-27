@@ -13,7 +13,7 @@ const Sidebar = () => {
   return (
     <>
       <img
-        src="/next.svg"
+        src="/images/image.jpg"
         alt="user avatar"
         className="w-32 h-32 rounded-full mx-auto"
       />

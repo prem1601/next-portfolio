@@ -1,4 +1,4 @@
-import { IService, ISkill } from "./type";
+import { IProject, IService, ISkill } from "./type";
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineApi } from "react-icons/ai";
@@ -88,5 +88,35 @@ export const tools: ISkill[] = [
     name: "Framer Motion",
     level: "70%",
     Icon: BsCircleFill,
+  },
+];
+
+export const projects: IProject[] = [
+  {
+    name: "Portfolio",
+    description: "Portfolio is designed and developed using Next.js",
+    img_path: "/images/portfolio-nextjs.png",
+    deployed_url: "https://portfolio-preetamchinde.vercel.app/",
+    github_url: "https://github.com/prem1601/next-portfolio",
+    category: ["next"],
+    key_techs: ["Next.js", "Tailwind CSS", "Framer Motion"],
+  },
+  {
+    name: "Product Page",
+    description: "This is designed to showcase the products.",
+    img_path: "/images/product-page.png",
+    deployed_url: "https://preetam-product-page.netlify.app",
+    github_url: "https://github.com/prem1601/Product-Page",
+    category: ["javascript"],
+    key_techs: ["HTML", "CSS", "Javascript", "Bootstrap"],
+  },
+  {
+    name: "Chat App",
+    description: "This app is a personal chat application.",
+    img_path: "/images/chat-app.png",
+    deployed_url: "https://reactfirebasechatapp.netlify.app",
+    github_url: "https://github.com/prem1601/chat-app",
+    category: ["react"],
+    key_techs: ["React", "Bootstrap", "Firebase"],
   },
 ];
