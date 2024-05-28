@@ -25,7 +25,7 @@ const Sidebar = () => {
 
       <p className="px-w py-1 bg-gray-200 dark:bg-dark-300 rounded-full my-3">Web Developer</p>
       <a
-        href=""
+        href="/assets/Preetam_Chinde.pdf"
         className="px-w py-1 bg-gray-200 dark:bg-dark-300 rounded-full my-3 flex items-center justify-center"
         download="Preetam Chinde CV"
       >
