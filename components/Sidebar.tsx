@@ -15,7 +15,7 @@ const Sidebar = () => {
       <img
         src="/images/image.jpg"
         alt="user avatar"
-        className="w-32 h-32 rounded-full mx-auto"
+        className="w-32 h-32 rounded-full mx-auto shadow-custom-light dark:shadow-custom-dark"
       />
 
       <h2 className="my-4 text-3xl font-medium tracking-wider font-averia">
