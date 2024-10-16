@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e: any) => {
-      e.preventDefault();
+      // e.preventDefault();
       setDeferredPrompt(e);
       setShowInstallButton(true); // Show the install button when the event is fired
       handleInstallClick();
@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
         handleBeforeInstallPrompt
       );
     };
-  }, []);
+  }, [showInstallButton]);
 
   const handleInstallClick = () => {
     if (deferredPrompt) {
