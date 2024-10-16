@@ -14,7 +14,7 @@ export default function Document() {
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#FFFFFF" />
         <link rel="apple-touch-icon" href="/icon-192x192.png" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
       </Head>
       <body className=" bg-gradient-to-r from-greenn to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white">
         <Main />
