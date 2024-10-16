@@ -3,19 +3,18 @@ import Sidebar from "@/components/Sidebar";
 import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [showInstallButton, setShowInstallButton] = useState<boolean>(false);
+
   useEffect(() => {
-    let deferredPrompt: any;
-
     const handleBeforeInstallPrompt = (e: any) => {
-      // Prevent the mini info bar from appearing
       e.preventDefault();
-      deferredPrompt = e; // Stash the event
-
-      // Here, instead of showing a button, you can log or handle silently
-      console.log("Install prompt available");
+      setDeferredPrompt(e);
+      setShowInstallButton(true); // Show the install button when the event is fired
+      handleInstallClick();
     };
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
@@ -27,6 +26,21 @@ export default function App({ Component, pageProps }: AppProps) {
       );
     };
   }, []);
+
+  const handleInstallClick = () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult: any) => {
+        if (choiceResult.outcome === "accepted") {
+          console.log("User accepted the A2HS prompt");
+        } else {
+          console.log("User dismissed the A2HS prompt");
+        }
+        setDeferredPrompt(null);
+        setShowInstallButton(false); // Hide the install button after prompt
+      });
+    }
+  };
 
   return (
     <ThemeProvider attribute="class">
