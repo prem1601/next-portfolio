@@ -5,7 +5,7 @@ const index = () => {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1">
       <h5 className="my-3 font-medium">
-        Bringing over 3 years of expertise in web UI development with in-depth
+        Bringing over 4 years of expertise in web UI development with in-depth
         knowledge of ReactJS, JavaScript and progressive web applications.
         Consistently recognized as a hands-on and competent leader, skilled at
         fast-paced, deadline-driven project completion.
@@ -25,3 +25,4 @@ const index = () => {
 };
 
 export default index;
+
