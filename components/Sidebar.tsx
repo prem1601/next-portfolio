@@ -23,7 +23,7 @@ const Sidebar = () => {
         <span>Chinde</span>
       </h2>
 
-      <p className="px-w py-1 bg-gray-200 dark:bg-dark-300 rounded-full my-3">Web Developer</p>
+      <p className="px-w py-1 bg-gray-200 dark:bg-dark-300 rounded-full my-3">Software Developer</p>
       <a
         href="/assets/Preetam_Chinde.pdf"
         className="px-w py-1 bg-gray-200 dark:bg-dark-300 rounded-full my-3 flex items-center justify-center"
@@ -58,7 +58,7 @@ const Sidebar = () => {
           <span>Pune, India</span>
         </div>
         <p className="my-2">preetamchinde@gmail.com</p>
-        <p className="my-2">8788717707</p>
+        <p className="my-2"><a href:"tel:+918788717707" target="_blank">+91 8788717707</a></p>
       </div>
 
       {/* Buttons  */}
@@ -79,3 +79,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
