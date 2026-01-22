@@ -58,23 +58,24 @@ const Sidebar = () => {
           <span>Pune, India</span>
         </div>
         <p className="my-2">preetamchinde@gmail.com</p>
-        <p className="my-2">
-          <a href="tel:+918788717707"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            +91 8788717707
-          </a>
-        </p>
+        <p className="my-2">+91 8788717707</p>
       </div>
 
       {/* Buttons  */}
-      <button
-        className=" bg-gradient-to-r from-greenn to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 hover:scale-105 hover:transition-all"
-        onClick={() => window.open("mailto:preetamchinde@gmail.com")}
-      >
-        Email Me
-      </button>
+      <div className="flex justify-center items-center gap-1.5">
+        <button
+          className=" bg-gradient-to-r from-greenn to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 hover:scale-105 hover:transition-all"
+          onClick={() => window.open("tel:+918788717707")}
+        >
+          Call Me
+        </button>
+        <button
+          className=" bg-gradient-to-r from-greenn to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 hover:scale-105 hover:transition-all"
+          onClick={() => window.open("mailto:preetamchinde@gmail.com")}
+        >
+          Email Me
+        </button>
+      </div>
       <button
         className=" bg-gradient-to-r from-greenn to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 hover:scale-105 hover:transition-all"
         onClick={changeTheme}
