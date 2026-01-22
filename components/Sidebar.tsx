@@ -58,7 +58,14 @@ const Sidebar = () => {
           <span>Pune, India</span>
         </div>
         <p className="my-2">preetamchinde@gmail.com</p>
-        <p className="my-2"><a href:"tel:+918788717707" target="_blank">+91 8788717707</a></p>
+        <p className="my-2">
+          <a href="tel:+918788717707"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            +91 8788717707
+          </a>
+        </p>
       </div>
 
       {/* Buttons  */}
@@ -79,4 +86,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
 
