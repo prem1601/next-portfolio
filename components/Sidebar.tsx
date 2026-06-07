@@ -43,7 +43,7 @@ const Sidebar = () => {
           <FaGithub className="w-8 h-8 cursor-pointer" />
         </a>
         <a
-          href="https://www.linkedin.com/in/preetam-chinde-5258a01b6"
+          href="www.linkedin.com/in/preetam-chinde"
           target="_blank"
           rel="noopener noreferrer"
         >
