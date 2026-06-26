@@ -25,9 +25,9 @@ const Sidebar = () => {
 
       <p className="px-w py-1 bg-gray-200 dark:bg-dark-300 rounded-full my-3">Software Developer</p>
       <a
-        href="/assets/Preetam_Chinde.pdf"
+        href="/assets/Preetam_Chinde_8788717707.pdf"
         className="px-w py-1 bg-gray-200 dark:bg-dark-300 rounded-full my-3 flex items-center justify-center"
-        download="Preetam Chinde CV"
+        download="Preetam_Chinde_8788717707"
       >
         <GiTie className="w-6 h-6" />
         <span>Download Resume</span>

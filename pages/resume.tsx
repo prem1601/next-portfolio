@@ -13,8 +13,9 @@ const resume = () => {
             <h5 className="my-2 text-xl font-bold">E&TC (B.Tech)</h5>
             <p className=" font-semibold">ATS, SBGI, Miraj(2017 - 2021)</p>
             <p className="my-3">
-              During college - completed Jr. Software Developer (400 Hrs.) Course
-              by Government of India & worked as volunteer in various camps of NSS .
+              During college - completed Jr. Software Developer (400 Hrs.)
+              Course by Government of India & worked as volunteer in various
+              camps of NSS .
             </p>
           </div>
         </div>
@@ -22,13 +23,16 @@ const resume = () => {
         <div>
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
-            <h5 className="my-2 text-xl font-bold">Sr. Web Developer</h5>
+            <h5 className="my-2 text-xl font-bold">Frontend Engineer</h5>
             <p className=" font-semibold">
-              Datart Infotech (April 2023 - present)
+              Quantiphi Technologies (Aug 2024 - May 2026)
             </p>
             <p className="my-3">
-              Headed the onshore development team, improving code quality by 90%
-              while ensuring accurate requirement implementation.
+              Engineered scalable multi-tenant frontend modules supporting
+              complex attendance, payroll metrics, and operational dashboards,
+              improving UI loading performance by 70%. Built enterprise-grade
+              workforce management workflows using ReactJS, TypeScript, and
+              Redux Toolkit, increasing user experience metrics by 60%.
             </p>
           </div>
         </div>

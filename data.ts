@@ -1,9 +1,11 @@
 import { IProject, IService, ISkill } from "./type";
 import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
+import { FaCss3Alt, FaHtml5, FaJs, FaReact, FaServer, FaCode } from "react-icons/fa";
 import { AiOutlineApi } from "react-icons/ai";
 import { BsCircleFill } from "react-icons/bs";
 import { MdDeveloperMode } from "react-icons/md";
+import { SiExpress, SiMongodb, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiReact } from "react-icons/si";
 
 export const services: IService[] = [
   {
@@ -33,66 +35,61 @@ export const services: IService[] = [
 export const languages: ISkill[] = [
   {
     name: "React.js",
-    level: "75%",
-    Icon: BsCircleFill,
+    level: "98%",
+    Icon: FaReact,
   },
   {
     name: "CSS",
     level: "80%",
-    Icon: BsCircleFill,
+    Icon: FaCss3Alt,
   },
   {
     name: "TypeScript",
-    level: "70%",
-    Icon: BsCircleFill,
+    level: "90%",
+    Icon: SiTypescript,
   },
   {
     name: "Javascript",
-    level: "70%",
-    Icon: BsCircleFill,
+    level: "95%",
+    Icon: FaJs,
   },
   {
     name: "Express.js",
-    level: "60%",
-    Icon: BsCircleFill,
+    level: "80%",
+    Icon: SiExpress,
   },
   {
     name: "MongoDB",
-    level: "48%",
-    Icon: BsCircleFill,
+    level: "85%",
+    Icon: SiMongodb,
   },
   {
     name: "Tailwind CSS",
-    level: "60%",
-    Icon: BsCircleFill,
+    level: "80%",
+    Icon: SiTailwindcss,
   },
   {
     name: "Next.js",
-    level: "50%",
-    Icon: BsCircleFill,
+    level: "70%",
+    Icon: SiNextdotjs,
   },
   {
     name: "HTML",
     level: "80%",
-    Icon: BsCircleFill,
+    Icon: FaHtml5,
   },
 ];
 
 export const tools: ISkill[] = [
   {
     name: "VS Code",
-    level: "60%",
-    Icon: BsCircleFill,
+    level: "85%",
+    Icon: FaCode,
   },
   {
     name: "React Icons",
-    level: "53%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Framer Motion",
-    level: "70%",
-    Icon: BsCircleFill,
+    level: "56%",
+    Icon: SiReact,
   },
 ];
 
@@ -124,4 +121,35 @@ export const projects: IProject[] = [
     category: ["react"],
     key_techs: ["React", "Bootstrap", "Firebase"],
   },
+  {
+    name: "Workforce System",
+    description:
+      "This is a workforce system for a company with a RBAC (Role Based Access Control) and a permission system.",
+    img_path: "/images/workforce-system.png",
+    deployed_url: "https://workforce-saas-app.vercel.app/",
+    github_url: "https://github.com/prem1601/Workforce_SaaS",
+    category: ["fullstack"],
+    key_techs: [
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+      "React",
+      "Redux Toolkit",
+      "JWT",
+      "Tailwind CSS",
+      "Mongoose",
+      "React Query",
+      "TypeScript"
+    ],
+  },
+  // {
+  //   name: "airbnb Clone",
+  //   description:
+  //     "This is a Airbnb mini clone with authentication and booking system.",
+  //   img_path: "/images/airbnb-clone.png",
+  //   deployed_url: "https://airbnb-mini-clone.vercel.app/",
+  //   github_url: "https://github.com/prem1601/Airbnb_Mini_Clone",
+  //   category: ["fullstack"],
+  //   key_techs: ["Node.js", "Express.js", 'EJS', 'express-session', 'bcryptjs', 'express-validator', "MongoDB", "Tailwind CSS"],
+  // },
 ];

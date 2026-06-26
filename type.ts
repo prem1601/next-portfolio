@@ -10,7 +10,7 @@ export interface ISkill {
   Icon: any;
 }
 
-export type Category = "react" | "next" | "javascript";
+export type Category = "react" | "next" | "javascript" | "fullstack";
 // export type Category = 'react' | 'node' | 'express' | 'mongo' | 'next' | 'javascript'
 export interface IProject {
   name: string;

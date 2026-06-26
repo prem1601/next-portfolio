@@ -1,5 +1,6 @@
 import { Category } from "@/type";
 import { FunctionComponent } from "react";
+import { projects } from "@/data";
 
 const NavItem: FunctionComponent<{
   value: Category | "all";
@@ -26,21 +27,14 @@ const ProjectsNavbar: FunctionComponent<{
         handleFilterCategory={handleFilterCategory}
         active={active}
       />
-      <NavItem
-        value="react"
-        handleFilterCategory={handleFilterCategory}
-        active={active}
-      />
-      <NavItem
-        value="next"
-        handleFilterCategory={handleFilterCategory}
-        active={active}
-      />
-      <NavItem
-        value="javascript"
-        handleFilterCategory={handleFilterCategory}
-        active={active}
-      />
+      {projects.map((project) => (
+        <NavItem
+          key={project.category[0]}
+          value={project.category[0]}
+          handleFilterCategory={handleFilterCategory}
+          active={active}
+        />
+      ))}
     </div>
   );
 };
