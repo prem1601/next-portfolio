@@ -2,9 +2,9 @@ import { IProject, IService, ISkill } from "./type";
 import { RiComputerLine } from "react-icons/ri";
 import { FaCss3Alt, FaHtml5, FaJs, FaReact, FaServer, FaCode } from "react-icons/fa";
 import { AiOutlineApi } from "react-icons/ai";
-import { BsCircleFill } from "react-icons/bs";
+import { SiClaude } from "react-icons/si";
 import { MdDeveloperMode } from "react-icons/md";
-import { SiExpress, SiMongodb, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiExpress, SiGithubcopilot, SiMongodb, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { SiReact } from "react-icons/si";
 
 export const services: IService[] = [
@@ -85,6 +85,16 @@ export const tools: ISkill[] = [
     name: "VS Code",
     level: "85%",
     Icon: FaCode,
+  },
+  {
+    name: "Claude",
+    level: "85%",
+    Icon:  SiClaude,
+  },
+  {
+    name: "Github Copilot",
+    level: "85%",
+    Icon: SiGithubcopilot,
   },
   {
     name: "React Icons",
