@@ -25,7 +25,7 @@ const resume = () => {
           <div>
             <h5 className="my-2 text-xl font-bold">Frontend Engineer</h5>
             <p className=" font-semibold">
-              Quantiphi Technologies (Aug 2024 - May 2026)
+              Quantian Technologies (Aug 2024 - May 2026)
             </p>
             <p className="my-3">
               Engineered scalable multi-tenant frontend modules supporting
