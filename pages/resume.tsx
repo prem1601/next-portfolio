@@ -23,7 +23,7 @@ const resume = () => {
         <div>
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
-            <h5 className="my-2 text-xl font-bold">Frontend Engineer</h5>
+            <h5 className="my-2 text-xl font-bold">Software Engineer</h5>
             <p className=" font-semibold">
               Quantian Technologies (Aug 2024 - May 2026)
             </p>
